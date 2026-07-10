@@ -5,6 +5,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import tobias.newstuff.NewStuff;
 
@@ -17,9 +19,11 @@ public class ModItems {
         });
     }
 
-    private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, Identifier.of(NewStuff.MOD_ID, name), item);
+    private static Item registerItem(String name, Item.Settings settings){
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NewStuff.MOD_ID, name));
+        Item item = new Item(settings.registryKey(itemKey));
+        return Registry.register(Registries.ITEM, itemKey, item);
     }
 
-    public static final Item STEEL = registerItem("steel", new Item(new Item.Settings()));
+    public static final Item STEEL = registerItem("steel", new Item.Settings());
 }
