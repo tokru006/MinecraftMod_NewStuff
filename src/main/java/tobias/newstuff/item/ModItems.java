@@ -16,6 +16,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(STEEL);
+            entries.add(CHEESECAKE);
         });
     }
 
@@ -26,4 +27,5 @@ public class ModItems {
     }
 
     public static final Item STEEL = registerItem("steel", new Item.Settings());
+    public static final Item CHEESECAKE = registerItem("cheesecake", new Item.Settings());
 }
