@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tobias.newstuff.block.ModBlocks;
 import tobias.newstuff.item.ModItems;
 
 public class NewStuff implements ModInitializer {
@@ -26,6 +27,7 @@ public class NewStuff implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");*/
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {

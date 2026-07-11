@@ -1,4 +1,6 @@
 {
   "item.newstuff.steel_ingot": "Steel Ingot",
-  "item.newstuff.cheesecake": "Cheesecake"
+  "item.newstuff.cheesecake": "Cheesecake",
+
+  "block.newstuff.steel_block": "Block of Steel"
 }

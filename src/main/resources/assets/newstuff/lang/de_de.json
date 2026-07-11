@@ -1,4 +1,6 @@
 {
   "item.newstuff.steel_ingot": "Stahlbarren",
-  "item.newstuff.cheesecake": "Käsekuchen"
+  "item.newstuff.cheesecake": "Käsekuchen",
+
+  "block.newstuff.steel_block": "Stahlblock"
 }
