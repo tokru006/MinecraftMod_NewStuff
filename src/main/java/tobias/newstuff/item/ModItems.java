@@ -15,7 +15,7 @@ public class ModItems {
         NewStuff.LOGGER.info("Registering Mod Items for " + NewStuff.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(STEEL);
+            entries.add(STEEL_INGOT);
             entries.add(CHEESECAKE);
         });
     }
@@ -26,6 +26,6 @@ public class ModItems {
         return Registry.register(Registries.ITEM, itemKey, item);
     }
 
-    public static final Item STEEL = registerItem("steel", new Item.Settings());
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item.Settings());
     public static final Item CHEESECAKE = registerItem("cheesecake", new Item.Settings());
 }
